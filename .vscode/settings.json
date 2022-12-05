@@ -12,5 +12,6 @@
 		"**/.vscode": false,
 		"**/.next": false,
 		"**/.husky": false
-	}
+	},
+	"cSpell.words": ["IGPDI", "IGPM"]
 }

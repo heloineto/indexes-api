@@ -27,12 +27,9 @@ const years = [
 
 const history: Record<string, number> = {};
 
-/**
- * Returns a random number between min (inclusive) and max (exclusive)
- */
-function getRandom(min: number, max: number) {
+const getRandom = (min: number, max: number) => {
 	return Math.random() * (max - min) + min;
-}
+};
 
 for (const year of years) {
 	for (const month of months) {
@@ -42,8 +39,16 @@ for (const year of years) {
 	}
 }
 
+const indexes = {
+	CDI: history,
+	IPCA: history,
+	SELIC: history,
+	IGPM: history,
+	IGPDI: history,
+};
+
 const handler = (req: NextApiRequest, res: NextApiResponse) => {
-	res.status(200).json(history);
+	res.status(200).json(indexes);
 };
 
 export default handler;
