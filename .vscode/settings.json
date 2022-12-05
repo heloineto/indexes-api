@@ -1,0 +1,16 @@
+{
+	"editor.codeActionsOnSave": [
+		"source.addMissingImports",
+		"source.fixAll",
+		"source.organizeImports"
+	],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.foldingImportsByDefault": true,
+	"editor.formatOnSave": true,
+	"eslint.packageManager": "pnpm",
+	"files.exclude": {
+		"**/.vscode": false,
+		"**/.next": false,
+		"**/.husky": false
+	}
+}
